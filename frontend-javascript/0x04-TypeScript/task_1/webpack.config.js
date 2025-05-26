@@ -1,22 +1,20 @@
-const path = require("path");
-
 module.exports = {
-  mode: "development",
-  entry: "./js/main.ts",
+  entry: './js/main.ts',  // ✅ Ensure this points to main.ts
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'bundle.js',
+    path: __dirname + '/dist',  // ✅ Ensure dist folder is correct
   },
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: "ts-loader",
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: ['.ts', '.js'],
   },
 };
