@@ -1,0 +1,17 @@
+{
+  "name": "task_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^your-installed-version",
+    "typescript": "^your-installed-version",
+    "webpack": "^your-installed-version",
+    "webpack-cli": "^your-installed-version"
+  }
+}
