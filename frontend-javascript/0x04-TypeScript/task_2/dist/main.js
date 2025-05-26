@@ -7,6 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./js/main.ts":
@@ -15,7 +16,7 @@
   \********************/
 /***/ (() => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31merror while parsing tsconfig.json\\u001b[39m\\n    at Object.loader (C:\\\\Users\\\\hp\\\\frontend-javascript\\\\0x04-TypeScript\\\\task_2\\\\node_modules\\\\ts-loader\\\\dist\\\\index.js:18:18)\");\n\n//# sourceURL=webpack://task_2/./js/main.ts?");
+eval("\n// ✅ Create Employee Based on Salary\nfunction createEmployee(salary) {\n    if (salary >= 1000) {\n        return { salary, workDirectorTasks: () => console.log(\"Getting to director tasks\") };\n    }\n    return { salary, workTeacherTasks: () => console.log(\"Getting to work\") };\n}\n// ✅ Type Predicate to Identify Directors\nfunction isDirector(employee) {\n    return employee.workDirectorTasks !== undefined;\n}\n// ✅ Function to Execute Work Based on Role\nfunction executeWork(employee) {\n    if (isDirector(employee)) {\n        employee.workDirectorTasks();\n    }\n    else {\n        employee.workTeacherTasks();\n    }\n}\n// ✅ Test the Functions\nconsole.log(\"Testing executeWork function:\");\nexecuteWork(createEmployee(200)); // Expected Output: Getting to work\nexecuteWork(createEmployee(1000)); // Expected Output: Getting to director tasks\n\n\n//# sourceURL=webpack://task_2/./js/main.ts?");
 
 /***/ })
 
@@ -24,7 +25,7 @@ eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./js/main.ts"]();
 /******/ 	
