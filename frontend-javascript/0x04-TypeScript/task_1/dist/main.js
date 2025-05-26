@@ -1,10 +1,10 @@
 "use strict";
-// ✅ Example usage
-const teacher3 = {
+// ✅ Create and log Directors object
+const director1 = {
     firstName: "John",
     lastName: "Doe",
-    fullTimeEmployee: false,
     location: "London",
-    contract: false, // Additional attribute allowed
+    fullTimeEmployee: true,
+    numberOfReports: 17,
 };
-console.log(teacher3);
+console.log(director1);
