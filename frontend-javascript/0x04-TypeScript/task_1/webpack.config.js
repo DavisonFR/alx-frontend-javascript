@@ -1,8 +1,9 @@
 module.exports = {
-  entry: './js/main.ts',  // ✅ Ensure this points to main.ts
+  entry: './js/main.ts',
+  // ✅ Must point to './js/main.ts', NOT './src'
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist',  // ✅ Ensure dist folder is correct
+    path: __dirname + '/dist',
   },
   mode: 'development',
   module: {
